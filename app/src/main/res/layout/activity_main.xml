@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TrackIn"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GPS Based Attendance Alert"
+            android:textSize="16sp"
+            android:textColor="#4B5563"
+            android:gravity="center"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name"
+            android:inputType="textPersonName"
+            android:padding="14dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRollNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roll Number"
+            android:inputType="text"
+            android:padding="14dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etTeacherPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teacher/Admin Phone Number"
+            android:inputType="phone"
+            android:padding="14dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/tvLocationStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Status: Not fetched"
+            android:textSize="15sp"
+            android:textColor="#374151"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Latitude: --"
+            android:textSize="15sp"
+            android:textColor="#374151"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Longitude: --"
+            android:textSize="15sp"
+            android:textColor="#374151"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnGetLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get Current Location"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnSendAlert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Attendance Alert" />
+
+        <TextView
+            android:id="@+id/tvSmsStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS Status: --"
+            android:textSize="15sp"
+            android:textColor="#374151"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
